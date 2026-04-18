@@ -1,0 +1,20 @@
+[2026-04-18T20:51:36Z] === ENRICH ITERATION 1 START | repo=aFarkas/html5shiv sha=ed28c56c ===
+[2026-04-18T20:51:36Z] [iter=1] PHASE START: enrich repo=aFarkas/html5shiv sha=ed28c56c runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ed28c56c-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ed28c56c071bddfe7d635ad88995674957a016be.nq.gz
+[2026-04-18T20:51:39Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-18T20:51:45Z] [iter=1] AST store loaded triples=578741 load_secs=5 mem_mb=798 MB
+[2026-04-18T20:51:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=798 MB
+[2026-04-18T20:51:45Z] [iter=1] LSP targets found call_sites=6410 imports=0 extends=0 implements=0 secs=0
+[2026-04-18T20:51:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=798 MB
+[2026-04-18T20:51:48Z] [iter=1] Position index built positions=39298 nodes_with_types=47316 secs=3 mem_mb=798 MB
+[2026-04-18T20:51:48Z] [iter=1] Step 3: Starting LSP resolution mem_mb=798 MB already_completed_types=[] already_completed_files=0
+[2026-04-18T20:51:48Z] [iter=1] Resolving target type target_type=call_site count=6410
+[2026-04-18T20:52:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=1 resolved=20 errors=159 current=test/highcharts/highcharts.js
+[2026-04-18T20:57:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=2 resolved=49 errors=1654 current=test/jquery-1.7.1/unit/core.js
+[2026-04-18T20:58:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=4 resolved=91 errors=1834 current=test/qunit/qunit.js
+[2026-04-18T20:59:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=5 resolved=128 errors=2087 current=test/jquery-1.7.1/unit/manipulation.js
+[2026-04-18T21:00:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=6 resolved=180 errors=2428 current=src/html5shiv.js
+[2026-04-18T21:01:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=9 resolved=198 errors=2609 current=dist/html5shiv.js
+[2026-04-18T21:01:24Z] [iter=1] Target type resolved target_type=call_site resolved=209 errors=2667 secs=576 mem_mb=798 MB
+[2026-04-18T21:01:28Z] [iter=1] Step 5: Writing final enrichment file triples=34758
+[2026-04-18T21:01:28Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ed28c56c071bddfe7d635ad88995674957a016be.nq.gz size_kb=534
+[2026-04-18T21:01:28Z] [iter=1] PHASE END: enrich elapsed_s=592 elapsed_min=9.9 total_triples=34758
